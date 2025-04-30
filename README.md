@@ -46,7 +46,7 @@ Provides quick analysis of input text:
 - **Backend**: Node.js + Express.js  
 - **Database**: MongoDB (for saving user history)  
 - **AI Integrations**:
-  - OpenAI GPT-3.5/4 (for rewriting and tone transformation)  
+  - Google Gemini (for rewriting and tone transformation)  
   - Hugging Face APIs (for grammar checks & sentiment analysis)  
   - Tone.js (for voice input via speech-to-text)
 
@@ -89,6 +89,7 @@ Provides quick analysis of input text:
 # Clone the repository
 git clone https://github.com/your-username/textcraft-ai.git
 cd textcraft-ai
+env included
 
 # Install backend dependencies
 cd server
