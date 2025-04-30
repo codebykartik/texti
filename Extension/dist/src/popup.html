@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>TextCraft AI</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Inter:400,500,600,700&display=swap">
+  
+  
+  <link rel="stylesheet" href="/assets/popup-84ef2b87.css">
+</head>
+<body>
+  <div id="app">
+    <div class="header">
+      <div class="logo">
+        <span class="logo-icon">✨</span>
+        <span class="logo-text">TextCraft AI</span>
+      </div>
+    </div>
+    
+    <div id="login-container" class="container">
+      <h2>Sign In</h2>
+      <p class="subtitle">Sign in to use TextCraft AI across the web</p>
+      
+      <form id="login-form">
+        <div class="form-group">
+          <label for="email">Email</label>
+          <input type="email" id="email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" placeholder="Enter your password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign In</button>
+      </form>
+      
+      <div class="form-footer">
+        <a href="#" id="go-to-signup">Don't have an account? Sign Up</a>
+      </div>
+    </div>
+    
+    <div id="signup-container" class="container hidden">
+      <h2>Create Account</h2>
+      <p class="subtitle">Sign up to use TextCraft AI across the web</p>
+      
+      <form id="signup-form">
+        <div class="form-group">
+          <label for="name">Full Name</label>
+          <input type="text" id="name" placeholder="Your Name" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-email">Email</label>
+          <input type="email" id="signup-email" placeholder="your@email.com" required>
+        </div>
+        <div class="form-group">
+          <label for="signup-password">Password</label>
+          <input type="password" id="signup-password" placeholder="Create a password" required>
+        </div>
+        <button type="submit" class="btn btn-primary">Sign Up</button>
+      </form>
+      
+      <div class="form-footer">
+        <a href="#" id="go-to-login">Already have an account? Sign In</a>
+      </div>
+    </div>
+    
+    <div id="dashboard-container" class="container hidden">
+      <div class="user-info">
+        <div class="avatar">
+          <span id="user-initials">U</span>
+        </div>
+        <div class="user-details">
+          <div id="user-name" class="user-name">User Name</div>
+          <div id="user-email" class="user-email">user@example.com</div>
+        </div>
+      </div>
+      
+      <div class="section">
+        <h3>How to Use</h3>
+        <ol class="instructions">
+          <li>Select text on any webpage</li>
+          <li>Right-click and choose "TextCraft AI"</li>
+          <li>Pick a transformation style</li>
+          <li>See the transformed text in a popup</li>
+        </ol>
+      </div>
+      
+      <div class="section">
+        <h3>Quick Transform</h3>
+        <textarea id="quick-input" placeholder="Enter text to transform..."></textarea>
+        <div class="transform-controls">
+          <select id="transform-type">
+            <option value="formal">Make Formal</option>
+            <option value="casual">Make Casual</option>
+            <option value="joke">Add Humor</option>
+            <option value="shakespearean">Shakespearean</option>
+            <option value="emoji">Add Emojis</option>
+            <option value="grammar">Fix Grammar</option>
+            <option value="concise">Make Concise</option>
+          </select>
+          <button id="transform-btn" class="btn btn-primary">Transform</button>
+        </div>
+        <div id="output-container" class="hidden">
+          <h4>Result:</h4>
+          <div id="transformed-output" class="transformed-output"></div>
+          <button id="copy-btn" class="btn btn-secondary">Copy to Clipboard</button>
+        </div>
+      </div>
+      
+      <button id="logout-btn" class="btn btn-outline">Sign Out</button>
+    </div>
+  </div>
+  
+  <script src="popup.js"></script>
+</body>
+</html>
