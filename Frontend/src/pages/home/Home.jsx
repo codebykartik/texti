@@ -160,7 +160,7 @@ const testimonialImages = {
 
 // Other images
 const miscImages = {
-    heroApp: "/assets/images/hero-app.png",
+    heroApp: "https://images.pexels.com/photos/261857/pexels-photo-261857.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
     heroBg: "/assets/images/hero-bg.jpg",
     brandLogos: [
         "/assets/images/brands/brand-1.png",
@@ -845,7 +845,7 @@ const Home = () => {
                         fontSize: { xs: '1.8rem', md: '2.2rem' }
                     }}
                 >
-                    See TextCraft AI in Action
+                    See 
                 </Typography>
 
                 <Typography
